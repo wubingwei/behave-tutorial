@@ -1,0 +1,49 @@
+<testsuite errors="0" failures="2" hostname="bingweideMacBook-Pro.local" name="feature.natural_language.Fight or Flight (Natural Language, tutorial02)" skipped="0" tests="2" time="0.004329" timestamp="2020-04-08T19:02:37.826304"><testcase classname="feature.natural_language.Fight or Flight (Natural Language, tutorial02)" name="Weaker opponent" status="failed" time="0.003331"><failure message="" type="AssertionError">
+<![CDATA[
+Failing step: Given the ninja has a third level black-belt ... failed in 0.003s
+Location: feature/natural_language.feature:9
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/behave/model.py", line 1329, in run
+    match.run(runner.context)
+  File "/usr/local/lib/python3.7/site-packages/behave/matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "steps/natural_language.py", line 60, in step_the_ninja_has_a
+    assert achievement_level != "third level black-belt"
+AssertionError
+]]>
+</failure><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Weaker opponent
+    Given the ninja has a third level black-belt ... failed in 0.003s
+    When attacked by a samurai ... skipped in 0.000s
+    Then the ninja should engage the opponent ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="feature.natural_language.Fight or Flight (Natural Language, tutorial02)" name="Stronger opponent" status="failed" time="0.000998"><failure message="" type="AssertionError">
+<![CDATA[
+Failing step: Given the ninja has a third level black-belt ... failed in 0.001s
+Location: feature/natural_language.feature:14
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/behave/model.py", line 1329, in run
+    match.run(runner.context)
+  File "/usr/local/lib/python3.7/site-packages/behave/matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "steps/natural_language.py", line 60, in step_the_ninja_has_a
+    assert achievement_level != "third level black-belt"
+AssertionError
+]]>
+</failure><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Stronger opponent
+    Given the ninja has a third level black-belt ... failed in 0.001s
+    When attacked by Chuck Norris ... skipped in 0.000s
+    Then the ninja should run for his life ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
